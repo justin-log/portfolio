@@ -1,0 +1,357 @@
+{
+  "profile": {
+    "name": "Jin-ho Lee",
+    "englishName": "Justin Lee",
+    "headline": "A&D (Aerospace & Defense) Future Strategist",
+    "subHeadline": "Strategic Investment & Startup Value-up Expert",
+    "currentRole": "Head of New Growth Strategy Team, KAI",
+    "email": "jinolee.ai@gmail.com",
+    "linkedin": "linkedin.com/in/bookjino",
+    "summary": "A&D의 미래 성장을 설계하는 'Future Strategist'. 18년 이상의 A&D 도메인 마스터이자 통합적 경영 리더십(전략기획, HR, M&A, 투자, AI 실무)을 보유한 전문가입니다.",
+    "expertise": [
+      {
+        "title": "M&A & Strategic Investment",
+        "description": "기술 시너지 분석, 기업 가치 평가(Valuation), 투자 구조 설계",
+        "details": [
+          "전사 비유기적 성장 전략 및 미래 비전 로드맵 수립 총괄",
+          "국내 A&D 분야 M&A 및 전략적 투자(SI) 프로젝트 총괄",
+          "M&A 1건, 중소기업/스타트업 투자 3건 (최근 성과)"
+        ]
+      },
+      {
+        "title": "Future Tech Strategy",
+        "description": "차세대 공중 전투체계, AI, UAV, AAV, 우주 산업 등",
+        "details": [
+          "AI 개발 조직 구성 및 AI 연구원 채용 등 개발 조직 초기 셋업",
+          "국방 AI, 지휘결심 AI 투자 및 기술 협력",
+          "차세대 공중 전투체계 개발 전략 수립"
+        ]
+      },
+      {
+        "title": "Open Innovation",
+        "description": "대기업-스타트업 상생 모델 구축, 기술 협력 및 생태계 활성화",
+        "details": [
+          "국내 스타트업 발굴 및 오픈 이노베이션 협업 체계 구축 (장관 표창)",
+          "2025 K-Aerospace 오픈이노베이션 프로그램 기획 및 운영",
+          "정부/지자체 PoC 협업 4건 완료, 2건 진행 중"
+        ]
+      },
+      {
+        "title": "People & Organizational Leadership",
+        "description": "인사관리(HRM), 인재개발(HRD) 전 분야의 업무 수행 경험",
+        "details": [
+          "(HRM) 조직임원 관리, 평가/보상 프로세스 구축 및 운영, 채용 등",
+          "(HRD) 신입사원/경력사원 입문교육, 리더십/직무 교육 등",
+          "전사 전략과 인사(HR) 역량 융합으로 사업 전략과 연계된 조직관리 리더십 보유"
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "한국항공우주산업 (KAI)",
+      "period": "2008.01 - Present",
+      "roles": [
+        {
+          "title": "신성장전략팀장 (부장)",
+          "period": "2024.01 - Present",
+          "achievements": [
+            "전사 비유기적 성장 전략 및 미래 비전 로드맵 수립 총괄",
+            "국내 A&D 분야 M&A 및 전략적 투자(SI) 프로젝트 총괄",
+            "국내 대기업과 전략적 파트너십 체결 (MOU 4건)",
+            "국내 스타트업 발굴 및 오픈 이노베이션 협업 체계 구축 (장관 표창 수상)"
+          ]
+        },
+        {
+          "title": "미래SW기술팀 책임연구원",
+          "period": "2023.01 - 2023.12",
+          "achievements": [
+            "AI 개발 조직 구성 및 AI 연구원 채용 등 개발 조직 초기 셋업"
+          ]
+        },
+        {
+          "title": "미래전략팀 차장",
+          "period": "2020.01 - 2022.12",
+          "achievements": [
+            "국내 스타트업 발굴 및 전략적 투자(SI) 실무 (스타트업 투자 2건)"
+          ]
+        },
+        {
+          "title": "신사업기획팀 과장",
+          "period": "2018.01 - 2019.12",
+          "achievements": [
+            "신규사업 기획, 비즈니스 모델 검토, 산업/기술 동향 분석, 시장조사, 경쟁사 분석"
+          ]
+        },
+        {
+          "title": "인사팀 과장",
+          "period": "2011.01 - 2019.12",
+          "achievements": [
+            "인사제도 개선, 조직/임원관리, 평가/승진, 채용 등"
+          ]
+        },
+        {
+          "title": "인재개발팀 사원",
+          "period": "2009.01 - 2010.12",
+          "achievements": [
+            "신입/경력사원 입문교육, 승진자 교육, 직무역량 교육 운영 등"
+          ]
+        },
+        {
+          "title": "KHP비행조종팀 연구원",
+          "period": "2008.01 - 2008.12",
+          "achievements": [
+            "KUH(Korean Utility Helicopter, 수리온) Air Data System 설계"
+          ]
+        }
+      ]
+    }
+  ],
+  "boardExperience": [
+    {
+      "company": "제노코(GENOHCO)",
+      "role": "기타비상무이사 (Non-Executive Director)",
+      "period": "2025.07 - Present",
+      "description": "코스닥 상장사 이사회 구성원으로서 전사 경영 전략 및 주요 의사결정 참여"
+    }
+  ],
+  "investments": [
+    {
+      "company": "제노코(GENOHCO)",
+      "type": "M&A",
+      "date": "2024.11",
+      "summary": "위성통신·항공전자 코스닥 상장사 경영권 인수",
+      "news_url": "https://www.mt.co.kr/industry/2024/11/07/2024110715400731087"
+    },
+    {
+      "company": "디브레인(DBRAIN)",
+      "type": "SI",
+      "date": "2025.06",
+      "summary": "소형 무인기 강소기업 투자",
+      "news_url": "https://www.yna.co.kr/view/AKR20250611131400003"
+    },
+    {
+      "company": "젠젠AI(GENGENAI)",
+      "type": "SI",
+      "date": "2025.03",
+      "summary": "국방 합성데이터 솔루션 스타트업 투자",
+      "news_url": "https://it.chosun.com/news/articleView.html?idxno=2023092135708"
+    },
+    {
+      "company": "펀진(Funzin)",
+      "type": "SI",
+      "date": "2024.11",
+      "summary": "국방 AI, 지휘결심 AI 스타트업 투자",
+      "news_url": "https://www.fnnews.com/news/202411211653445795"
+    },
+    {
+      "company": "메이사(Meissa)",
+      "type": "SI",
+      "date": "2024.09",
+      "summary": "위성 이미지 AI 분석 스타트업 추가 투자",
+      "news_url": "https://biz.heraldcorp.com/article/3475095"
+    },
+    {
+      "company": "코난테크놀로지(Konan Technology)",
+      "type": "SI",
+      "date": "2021.11",
+      "summary": "AI·빅데이터 강소기업 투자",
+      "news_url": "https://www.thepublic.kr/news/articleView.html?idxno=66182"
+    },
+    {
+      "company": "메이사(Meissa)",
+      "type": "SI",
+      "date": "2021.09",
+      "summary": "위성 이미지 AI 분석 스타트업 초기 투자",
+      "news_url": "https://www.defensetoday.kr/news/articleView.html?idxno=3069"
+    }
+  ],
+  "partnerships": [
+    {
+      "partner": "한화에어로스페이스",
+      "date": "2026.02",
+      "summary": "K-방산 경쟁력 강화를 위한 미래 핵심사업 협력 MOU",
+      "news_url": "https://www.hankyung.com/article/202602069122i"
+    },
+    {
+      "partner": "삼성전자",
+      "date": "2025.11",
+      "summary": "국방 AI 반도체 개발 및 생산 전략적 협력 MOU",
+      "news_url": "https://www.yna.co.kr/view/AKR20250611131400003"
+    },
+    {
+      "partner": "두산에너빌리티",
+      "date": "2024.12",
+      "summary": "항공/무인기 엔진 개발 전략적 협력 MOU",
+      "news_url": "https://www.mt.co.kr/industry/2024/11/07/2024110715400731087"
+    },
+    {
+      "partner": "현대오토에버",
+      "date": "2024.05",
+      "summary": "AAV 핵심 SW 플랫폼 공동 개발 협력 MOU",
+      "news_url": "https://www.sedaily.com/article/13908211"
+    }
+  ],
+  "pocRecord": [
+    {
+      "title": "방위산업 오픈이노베이션 챌린지 수요기업 (중소벤처기업부)",
+      "date": "2026.01",
+      "items": [
+        "(엔스퀘어) 유무인 복합체계 가상훈련 SW 개발",
+        "(PNU드론) 항공SW개발을 위한 에뮬레이터 개발"
+      ]
+    },
+    {
+      "title": "2025 K-Aerospace 오픈이노베이션 (KAI, 우주항공청, 연구개발특구재단 공동 기획)",
+      "date": "2025.11",
+      "items": [
+        "쿤텍, 플렉셀스페이스, 심스리얼리티 3개사 선정 및 사업화 자금 지원"
+      ],
+      "news_url": "https://www.yna.co.kr/view/AKR20251126113100003"
+    },
+    {
+      "title": "2025 민관협력 오픈이노베이션 지원사업 수요기업 (중소벤처기업부)",
+      "date": "2025.05",
+      "items": [
+        "(JNEworks) AI Pilot 학습을 위한 디지털 트윈 기반 합성 데이터 셋 구축",
+        "(코스모비) 저궤도 초소형 위성용 저전력 추련기 PoC 실증 *우수 사례 선정"
+      ],
+      "news_url": "https://v.daum.net/v/20260409174503622"
+    },
+    {
+      "title": "2025년 경남 오픈이노베이션 PoC 지원사업 수요기업 (경남창조경제혁신센터)",
+      "date": "2025.06",
+      "items": [
+        "(리빗) KAI의 공급망 탄소 배출량(Scope 3) 관리 솔루션 PoC"
+      ],
+      "news_url": "https://www.idomin.com/news/curationView.html?idxno=943646"
+    },
+    {
+      "title": "2024년 경남 오픈이노베이션 PoC 지원사업 수요기업 (경남창조경제혁신센터)",
+      "date": "2024.09",
+      "items": [
+        "(젠젠AI) AI Pilot 학습을 위한 생성형 AI 기반 합성데이터셋 구축"
+      ],
+      "news_url": "https://v.daum.net/v/utin0pj47p?f=p"
+    }
+  ],
+  "publications": [
+    {
+      "title": "2026 항공우주학회(KSAS) 춘계학술대회",
+      "date": "2026.04",
+      "content": "국내 항공우주 산업 생태계 발전을 위한 오픈이노베이션 사례 연구: 체계종합 기업의 기술실증(PoC) 사례 중심으로 (구두발표)"
+    },
+    {
+      "title": "2025 항공우주학회(KSAS) 추계학술대회",
+      "date": "2025.11",
+      "content": "항공우주&방위(A&D) 산업의 오픈이노베이션: 스타트업 협력과 정책적 시사점 (구두발표)"
+    },
+    {
+      "title": "공군 항공우주력 연구원, 항공우주력연구 11집",
+      "date": "2023.12",
+      "content": "대한민국 차세대 공중 전투체계 개발방안 연구"
+    },
+    {
+      "title": "2023 항공우주학회(KSAS) 추계학술대회",
+      "date": "2023.11",
+      "content": "유무인 복합체계의 자율임무 시스템에 필요한 인공지능 기술 연구 (구두발표)"
+    },
+    {
+      "title": "2023 항공우주학회(KSAS) 춘계학술대회",
+      "date": "2023.04",
+      "content": "저비용 소모성 무인기 개발 동향과 유무인 복합 전투체계 운용개념 연구 (구두발표)"
+    }
+  ],
+  "advisory": [
+    {
+      "title": "2026년 초격차 스타트업 프로젝트 방산분야 창업기업 선정 평가위원",
+      "org": "한국항공우주연구원",
+      "date": "2026.02"
+    },
+    {
+      "title": "2026년 글로벌 기업 협업 프로그램(Around X) 신규 주관기관 평가위원",
+      "org": "중소벤처기업부",
+      "date": "2025.12"
+    },
+    {
+      "title": "2025년 경남 오픈이노베이션 PoC 지원사업 평가위원",
+      "org": "경남창조경제혁신센터",
+      "date": "2025.04"
+    },
+    {
+      "title": "2024년 경남 오픈이노베이션 PoC 지원사업 평가위원",
+      "org": "경남창조경제혁신센터",
+      "date": "2024.05"
+    },
+    {
+      "title": "창업진흥원 창업지원사업 예비위원단",
+      "org": "창업진흥원",
+      "date": "2023 - Present"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Management of Technology",
+      "school": "경상국립대학교",
+      "date": "2026. 03 입학"
+    },
+    {
+      "degree": "M.S. in Defense AI & Robot Convergence",
+      "school": "광운대학교",
+      "date": "2025. 08 졸업",
+      "thesis": "합성 데이터를 활용한 국방 인공지능 학습 성능 향상에 관현 연구: 초소형 객체 탐지를 중심으로"
+    },
+    {
+      "degree": "M.S. in Business Administration",
+      "school": "경상국립대학교",
+      "date": "2018. 03 졸업",
+      "thesis": "조직공정성이 조직몰입과 직무성과에 미치는 영향에 관한 연구"
+    },
+    {
+      "degree": "B.S. in Control and Instrumentation Engineering",
+      "school": "고려대학교",
+      "date": "2008. 03 졸업"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "전문개인투자자 양성 교육과정 수료",
+      "org": "한국엔젤투자협회",
+      "date": "2025.04"
+    },
+    {
+      "title": "기업기술가치평가사 (KCVA: Korea Certified Valuation Analyst)",
+      "org": "KCVA",
+      "date": "2022.12"
+    }
+  ],
+  "awards": [
+    {
+      "title": "중소벤처기업부 장관 표창",
+      "date": "2025. 12",
+      "reason": "민관협력 오픈이노베이션 유공"
+    },
+    {
+      "title": "창업진흥원 2025 정책 아이디어 공모전 최우수상",
+      "date": "2025. 10",
+      "reason": "지역상생 분야"
+    }
+  ],
+  "presenter": [
+    {
+      "title": "2025 대한민국 우주항공산업 그랜드 네트워크 (경남진주강소특구)",
+      "date": "2025.11",
+      "topic": "미래 전장환경 변화와 차세대 공중 전투체계 개발 전략 (Keynote)"
+    },
+    {
+      "title": "2025 방위산업 오픈이노베이션 챌린지 KICK-OFF DAY (중소벤처기업부)",
+      "date": "2025.10",
+      "topic": "KAI 오픈이노베이션 추진 전략 및 PoC 협업 사례 발표"
+    },
+    {
+      "title": "2025 G-Aero 대중소 오픈이노베이션 및 릴레이투자로드쇼 (경상대학교)",
+      "date": "2025.10",
+      "topic": "KAI 오픈이노베이션 추진 전략 및 PoC 협업 사례 발표"
+    }
+  ]
+}
