@@ -582,7 +582,7 @@ export default function App() {
               <div>
                 <h4 className="text-base font-bold text-white mb-6 flex items-center gap-2">
                   <Globe className="w-4 h-4 text-electric-blue/70" />
-                  Keynote & Presentations
+                  Presentations
                 </h4>
                 <div className="space-y-6">
                   {portfolioData.presenter.map((pres, idx) => (
