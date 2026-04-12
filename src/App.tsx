@@ -221,7 +221,15 @@ export default function App() {
               </span>
             </h1>
             <p className="text-lg md:text-2xl text-space-slate mb-10 font-light max-w-2xl mx-auto px-4">
-              {portfolioData.profile.subHeadline}
+              {portfolioData.profile.subHeadline.includes('&') ? (
+                <>
+                  {portfolioData.profile.subHeadline.split('&')[0]}& 
+                  <br className="sm:hidden" />
+                  {portfolioData.profile.subHeadline.split('&')[1]}
+                </>
+              ) : (
+                portfolioData.profile.subHeadline
+              )}
             </p>
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 px-4">
               {portfolioData.profile.expertise.map((exp, idx) => (
@@ -330,12 +338,18 @@ export default function App() {
                         <span className="text-space-slate font-mono text-[10px] md:text-sm mt-1 md:mt-0">{role.period}</span>
                       </div>
                       <ul className="space-y-2">
-                        {role.achievements.map((ach, aIdx) => (
-                          <li key={aIdx} className="text-sm md:text-base text-space-light flex items-start gap-2 md:gap-3">
-                            <span className="mt-1.5 w-1 h-1 rounded-full bg-space-slate flex-shrink-0" />
-                            {ach}
-                          </li>
-                        ))}
+                        {role.achievements.map((ach, aIdx) => {
+                          const isObject = typeof ach === 'object' && ach !== null;
+                          const text = isObject ? (ach as any).text : ach;
+                          const isHighlighted = isObject && (ach as any).highlight;
+                          
+                          return (
+                            <li key={aIdx} className={`text-sm md:text-base flex items-start gap-2 md:gap-3 ${isHighlighted ? 'text-electric-blue font-semibold' : 'text-space-light'}`}>
+                              <span className={`mt-1.5 w-1 h-1 rounded-full flex-shrink-0 ${isHighlighted ? 'bg-electric-blue' : 'bg-space-slate'}`} />
+                              {text}
+                            </li>
+                          );
+                        })}
                       </ul>
                     </motion.div>
                   ))}
@@ -413,7 +427,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-[10px] md:text-xs font-bold text-electric-blue hover:text-white transition-colors"
                   >
-                    [기사보기] <ExternalLink className="w-3 h-3" />
+                    관련기사 <ExternalLink className="w-3 h-3" />
                   </a>
                 </motion.div>
               ))}
@@ -422,33 +436,28 @@ export default function App() {
 
           {/* Partnerships */}
           <div className="space-y-6">
-            <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-6">
+            <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-8">
               <Globe className="w-5 h-5 text-electric-blue" />
               Strategic Alliances
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-6">
               {portfolioData.partnerships.map((partner, idx) => (
-                <motion.div 
-                  key={idx}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="glass-panel p-4 md:p-5 rounded-xl border-l-4 border-electric-blue"
-                >
-                  <div className="flex justify-between items-center mb-2">
-                    <h4 className="text-sm md:text-base font-bold text-white">{partner.partner}</h4>
-                    <span className="text-space-slate font-mono text-[10px] md:text-xs ml-2">{partner.date}</span>
+                <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                  <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
+                  <div className="flex justify-between items-center mb-1">
+                    <h4 className="text-base font-bold text-white">{partner.partner}</h4>
+                    <span className="text-space-slate font-mono text-[10px] ml-2">{partner.date}</span>
                   </div>
-                  <p className="text-[11px] md:text-xs text-space-light mb-3">{partner.summary}</p>
+                  <p className="text-[11px] md:text-xs text-space-light mb-2">{partner.summary}</p>
                   <a 
                     href={partner.news_url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-[9px] md:text-[10px] font-bold text-space-slate hover:text-electric-blue flex items-center gap-1"
+                    className="text-[10px] font-bold text-electric-blue flex items-center gap-1"
                   >
-                    MOU Details <ExternalLink className="w-2.5 h-2.5" />
+                    관련기사 <ExternalLink className="w-2.5 h-2.5" />
                   </a>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -463,10 +472,10 @@ export default function App() {
             subtitle="스타트업과의 PoC 협업 및 학술 활동을 통해 산업의 미래를 구체화합니다." 
           />
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {/* PoC Records */}
             <div className="space-y-8">
-              <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2">
+              <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-8">
                 <Rocket className="w-5 h-5 text-electric-blue" />
                 Open Innovation (PoC)
               </h3>
@@ -493,7 +502,7 @@ export default function App() {
                         rel="noopener noreferrer"
                         className="text-[10px] font-bold text-electric-blue flex items-center gap-1"
                       >
-                        관련 소식 <ExternalLink className="w-2.5 h-2.5" />
+                        관련기사 <ExternalLink className="w-2.5 h-2.5" />
                       </a>
                     )}
                   </div>
@@ -501,48 +510,89 @@ export default function App() {
               </div>
             </div>
 
-            {/* Publications & Advisory */}
-            <div className="space-y-12">
+            {/* Publications */}
+            <div className="space-y-8">
+              <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-8">
+                <BookOpen className="w-5 h-5 text-electric-blue" />
+                Publications
+              </h3>
+              <div className="space-y-6">
+                {portfolioData.publications.map((pub, idx) => (
+                  <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                    <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                      <h4 className="font-bold text-white text-sm leading-snug">{pub.content}</h4>
+                      <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{pub.date}</span>
+                    </div>
+                    <p className="text-[10px] md:text-xs text-electric-blue">{pub.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Awards Section - Unified Style */}
+          <div className="pt-12 mb-16">
+            <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-8">
+              <Award className="w-5 h-5 text-electric-blue" />
+              Honors & Awards
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+              {portfolioData.awards.map((award, idx) => (
+                <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                  <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                    <h4 className="font-bold text-white text-sm leading-snug">{award.title}</h4>
+                    <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{award.date}</span>
+                  </div>
+                  <p className="text-[10px] md:text-xs text-electric-blue">{award.reason}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Professional Activity Section (Advisory & Presenter) */}
+          <div className="pt-12 border-t border-white/5">
+            <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-10">
+              <Users className="w-5 h-5 text-electric-blue" />
+              Professional Activity
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Advisory */}
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-6">
-                  <BookOpen className="w-5 h-5 text-electric-blue" />
-                  Publications
-                </h3>
-                <div className="space-y-4">
-                  {portfolioData.publications.map((pub, idx) => (
-                    <div key={idx} className="glass-panel p-4 rounded-lg">
-                      <div className="flex justify-between items-start mb-1">
-                        <h4 className="font-bold text-white text-xs md:text-sm">{pub.title}</h4>
-                        <span className="text-space-slate font-mono text-[9px] md:text-[10px] ml-2">{pub.date}</span>
+                <h4 className="text-base font-bold text-white mb-6 flex items-center gap-2">
+                  <Shield className="w-4 h-4 text-electric-blue/70" />
+                  Advisory & Evaluation
+                </h4>
+                <div className="space-y-6">
+                  {portfolioData.advisory.map((adv, idx) => (
+                    <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                      <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                        <h4 className="font-bold text-white text-sm leading-snug">{adv.title}</h4>
+                        <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{adv.date}</span>
                       </div>
-                      <p className="text-[11px] md:text-xs text-space-light">{pub.content}</p>
+                      <p className="text-[10px] md:text-xs text-electric-blue">{adv.org}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
+              {/* Presenter */}
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-6">
-                  <Award className="w-5 h-5 text-electric-blue" />
-                  Advisory & Awards
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {portfolioData.awards.map((award, idx) => (
-                    <div key={idx} className="bg-electric-blue/5 border border-electric-blue/20 p-4 rounded-lg">
-                      <div className="flex justify-between items-start mb-2">
-                        <Award className="w-4 h-4 text-electric-blue" />
-                        <span className="text-space-slate font-mono text-[9px] md:text-[10px]">{award.date}</span>
+                <h4 className="text-base font-bold text-white mb-6 flex items-center gap-2">
+                  <Globe className="w-4 h-4 text-electric-blue/70" />
+                  Keynote & Presentations
+                </h4>
+                <div className="space-y-6">
+                  {portfolioData.presenter.map((pres, idx) => (
+                    <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                      <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                        <h4 className="font-bold text-white text-sm leading-snug">{pres.topic}</h4>
+                        <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{pres.date}</span>
                       </div>
-                      <h4 className="font-bold text-white text-xs md:text-sm mb-1">{award.title}</h4>
-                      <p className="text-[9px] md:text-[10px] text-space-light">{award.reason}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-4 space-y-2 md:space-y-3">
-                  {portfolioData.advisory.map((adv, idx) => (
-                    <div key={idx} className="flex justify-between items-center text-[10px] md:text-xs p-3 glass-panel rounded-lg">
-                      <span className="text-white font-medium">{adv.title}</span>
-                      <span className="text-space-slate font-mono ml-4 text-[9px] md:text-[10px]">{adv.date}</span>
+                      <p className="text-[10px] md:text-xs text-electric-blue">{pres.title}</p>
                     </div>
                   ))}
                 </div>
