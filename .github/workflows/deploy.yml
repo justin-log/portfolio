@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '24' # 2026년 기준 최신 안정 버전
+          node-version: '24' # 2026년 기준 최신 안정 버전입니다.
 
       - name: Install dependencies
         run: npm install
@@ -25,5 +25,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # 만약 빌드 결과 폴더가 다르면 이 부분을 수정해야 합니다 (보통 dist)
-          branch: gh-pages
+          folder: dist # 빌드 결과물이 저장되는 폴더명입니다.
+          branch: gh-pages # 웹사이트 데이터가 쌓일 브랜치입니다.
