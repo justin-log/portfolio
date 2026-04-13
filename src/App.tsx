@@ -23,7 +23,8 @@ import {
   Calendar,
   MapPin,
   GraduationCap,
-  Users
+  Users,
+  Home
 } from 'lucide-react';
 import portfolioData from './data/portfolio.json';
 
@@ -418,7 +419,20 @@ export default function App() {
                       </span>
                       <span className="text-space-slate font-mono text-[10px] md:text-xs">{inv.date}</span>
                     </div>
-                    <h4 className="text-base md:text-lg font-bold text-white mb-2">{inv.company}</h4>
+                    <div className="flex items-center gap-2 mb-2">
+                      <h4 className="text-base md:text-lg font-bold text-white">{inv.company}</h4>
+                      {inv.homepage_url && (
+                        <a 
+                          href={inv.homepage_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-space-slate hover:text-electric-blue transition-colors"
+                          title="홈페이지 방문"
+                        >
+                          <Home className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                        </a>
+                      )}
+                    </div>
                     <p className="text-xs md:text-sm text-space-light mb-4">{inv.summary}</p>
                   </div>
                   <a 
@@ -531,22 +545,30 @@ export default function App() {
             </div>
           </div>
 
-          {/* Awards Section - Unified Style */}
+          {/* Awards Section - Highlighted Card Style */}
           <div className="pt-12 mb-16">
             <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-8">
               <Award className="w-5 h-5 text-electric-blue" />
               Honors & Awards
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {portfolioData.awards.map((award, idx) => (
-                <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
-                  <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
-                    <h4 className="font-bold text-white text-sm leading-snug">{award.title}</h4>
-                    <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{award.date}</span>
+                <motion.div 
+                  key={idx}
+                  whileHover={{ y: -5 }}
+                  className="glass-panel p-5 md:p-6 rounded-xl flex flex-col justify-between border-t-2 border-electric-blue/50"
+                >
+                  <div>
+                    <div className="flex justify-between items-start mb-3">
+                      <span className="bg-electric-blue/20 text-electric-blue px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">
+                        Award
+                      </span>
+                      <span className="text-space-slate font-mono text-[10px] md:text-xs">{award.date}</span>
+                    </div>
+                    <h4 className="text-base md:text-lg font-bold text-white mb-2">{award.title}</h4>
+                    <p className="text-xs md:text-sm text-space-light">{award.reason}</p>
                   </div>
-                  <p className="text-[10px] md:text-xs text-electric-blue">{award.reason}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

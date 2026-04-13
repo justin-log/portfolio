@@ -121,49 +121,56 @@
       "type": "M&A",
       "date": "2024.11",
       "summary": "위성통신·항공전자 코스닥 상장사 경영권 인수",
-      "news_url": "https://www.mt.co.kr/industry/2024/11/07/2024110715400731087"
+      "news_url": "https://www.mt.co.kr/industry/2024/11/07/2024110715400731087",
+      "homepage_url": "https://www.genohco.com/kr/"
     },
     {
       "company": "디브레인(DBRAIN)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2025.06",
       "summary": "소형 무인기 강소기업 투자",
-      "news_url": "https://www.yna.co.kr/view/AKR20250611131400003"
+      "news_url": "https://www.yna.co.kr/view/AKR20250611131400003",
+      "homepage_url": "https://dbrainuas.com/"
     },
     {
       "company": "젠젠AI(GENGENAI)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2025.03",
       "summary": "국방 합성데이터 솔루션 스타트업 투자",
-      "news_url": "https://it.chosun.com/news/articleView.html?idxno=2023092135708"
+      "news_url": "https://it.chosun.com/news/articleView.html?idxno=2023092135708",
+      "homepage_url": "https://gengen.ai/"
     },
     {
       "company": "펀진(Funzin)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2024.11",
       "summary": "국방 AI, 지휘결심 AI 스타트업 투자",
-      "news_url": "https://www.fnnews.com/news/202411211653445795"
+      "news_url": "https://www.fnnews.com/news/202411211653445795",
+      "homepage_url": "https://funzin.co.kr/main"
     },
     {
       "company": "메이사(Meissa)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2024.09",
       "summary": "위성 이미지 AI 분석 스타트업 추가 투자",
-      "news_url": "https://biz.heraldcorp.com/article/3475095"
+      "news_url": "https://biz.heraldcorp.com/article/3475095",
+      "homepage_url": "https://www.meissa.ai/kr"
     },
     {
       "company": "코난테크놀로지(Konan Technology)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2021.11",
       "summary": "AI·빅데이터 강소기업 투자",
-      "news_url": "https://www.thepublic.kr/news/articleView.html?idxno=66182"
+      "news_url": "https://www.thepublic.kr/news/articleView.html?idxno=66182",
+      "homepage_url": "https://www.konantech.com/"
     },
     {
       "company": "메이사(Meissa)",
       "type": "STRATEGIC INVESTMENT",
       "date": "2021.09",
       "summary": "위성 이미지 AI 분석 스타트업 초기 투자",
-      "news_url": "https://www.defensetoday.kr/news/articleView.html?idxno=3069"
+      "news_url": "https://www.defensetoday.kr/news/articleView.html?idxno=3069",
+      "homepage_url": "https://www.meissa.ai/kr"
     }
   ],
   "partnerships": [
