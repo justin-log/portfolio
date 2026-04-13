@@ -295,7 +295,7 @@ export default function App() {
               </div>
               <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-electric-blue transition-colors">{exp.title}</h3>
               <p className="text-sm md:text-base text-space-slate line-clamp-2">{exp.description}</p>
-              <div className="mt-4 md:mt-6 text-xs md:text-sm font-bold text-electric-blue md:opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="mt-4 md:mt-6 text-xs md:text-sm font-bold text-space-slate/40 group-hover:text-electric-blue transition-colors">
                 View Details
               </div>
             </motion.div>
@@ -410,7 +410,7 @@ export default function App() {
                 <motion.div 
                   key={idx}
                   whileHover={{ y: -5 }}
-                  className="glass-panel p-5 md:p-6 rounded-xl flex flex-col justify-between"
+                  className="group glass-panel p-5 md:p-6 rounded-xl flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex justify-between items-start mb-3">
@@ -439,7 +439,7 @@ export default function App() {
                     href={inv.news_url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-[10px] md:text-xs font-bold text-electric-blue hover:text-white transition-colors"
+                    className="flex items-center gap-2 text-[10px] md:text-xs font-bold text-space-slate/40 group-hover:text-electric-blue transition-colors"
                   >
                     관련기사 <ExternalLink className="w-3 h-3" />
                   </a>
@@ -456,7 +456,7 @@ export default function App() {
             </h3>
             <div className="space-y-6">
               {portfolioData.partnerships.map((partner, idx) => (
-                <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                <div key={idx} className="group relative pl-5 md:pl-6 border-l border-white/10">
                   <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
                   <div className="flex justify-between items-center mb-1">
                     <h4 className="text-base font-bold text-white">{partner.partner}</h4>
@@ -467,7 +467,7 @@ export default function App() {
                     href={partner.news_url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-[10px] font-bold text-electric-blue flex items-center gap-1"
+                    className="text-[10px] font-bold text-space-slate/40 group-hover:text-electric-blue transition-colors flex items-center gap-1"
                   >
                     관련기사 <ExternalLink className="w-2.5 h-2.5" />
                   </a>
@@ -495,7 +495,7 @@ export default function App() {
               </h3>
               <div className="space-y-6">
                 {portfolioData.pocRecord.map((poc, idx) => (
-                  <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                  <div key={idx} className="group relative pl-5 md:pl-6 border-l border-white/10">
                     <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                       <h4 className="font-bold text-white text-sm">{poc.title}</h4>
@@ -514,7 +514,7 @@ export default function App() {
                         href={poc.news_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-[10px] font-bold text-electric-blue flex items-center gap-1"
+                        className="text-[10px] font-bold text-space-slate/40 group-hover:text-electric-blue transition-colors flex items-center gap-1"
                       >
                         관련기사 <ExternalLink className="w-2.5 h-2.5" />
                       </a>
