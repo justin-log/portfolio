@@ -319,8 +319,21 @@ export default function App() {
                   <div className="p-2.5 md:p-3 bg-electric-blue text-space-navy rounded-xl">
                     <Briefcase className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-bold text-white">{exp.company}</h3>
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xl md:text-2xl font-bold text-white">{exp.company}</h3>
+                      {exp.company === "한국항공우주산업 (KAI)" && (
+                        <a 
+                          href="https://www.koreaaero.com/KO/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-space-slate hover:text-electric-blue transition-colors"
+                          title="KAI 홈페이지 방문"
+                        >
+                          <Home className="w-4 h-4 md:w-5 md:h-5" />
+                        </a>
+                      )}
+                    </div>
                     <p className="text-electric-blue font-mono text-xs md:text-sm">{exp.period}</p>
                   </div>
                 </div>
@@ -717,11 +730,8 @@ export default function App() {
 
       {/* Footer */}
       <footer className="py-12 px-6 text-center border-t border-white/5">
-        <p className="text-space-slate text-sm font-mono">
-          © {new Date().getFullYear()} {portfolioData.profile.name}. All rights reserved.
-        </p>
-        <p className="text-[10px] text-space-slate/50 mt-2 uppercase tracking-widest">
-          Strategic Flight Deck Portfolio
+        <p className="text-space-slate text-[10px] md:text-sm font-mono">
+          © {new Date().getFullYear()} {portfolioData.profile.name}. Powered by Google AI Studio, GitHub & Vercel.
         </p>
       </footer>
 

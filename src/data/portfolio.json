@@ -22,7 +22,7 @@
         "title": "Future Tech Strategy",
         "description": "차세대 공중 전투체계, AI, UAV, AAV, 우주 산업 등",
         "details": [
-          "AI 개발 조직 구성 및 AI 연구원 채용 등 개발 조직 초기 셋업",
+          "AI 연구개발 계획 수립, AI 개발 조직 구성 및 AI 연구원 채용 등 조직 초기 셋업",
           "국방 AI, 지휘결심 AI 투자 및 기술 협력",
           "차세대 공중 전투체계 개발 전략 수립"
         ]
@@ -66,7 +66,7 @@
           "title": "미래SW기술팀 책임연구원",
           "period": "2023.01 - 2023.12",
           "achievements": [
-            "AI 개발 조직 구성 및 AI 연구원 채용 등 개발 조직 초기 셋업"
+            "AI 연구개발 계획 수립, AI 개발 조직 구성 및 AI 연구원 채용 등 조직 초기 셋업"
           ]
         },
         {
@@ -305,7 +305,7 @@
       "date": "2026. 03 입학"
     },
     {
-      "degree": "M.S. in Defense AI & Robot Convergence",
+      "degree": "M.Eng. in Defense AI & Robot Convergence",
       "school": "광운대학교",
       "date": "2025. 08 졸업",
       "thesis": "합성 데이터를 활용한 국방 인공지능 학습 성능 향상에 관현 연구: 초소형 객체 탐지를 중심으로"
