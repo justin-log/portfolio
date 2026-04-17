@@ -24,7 +24,8 @@ import {
   MapPin,
   GraduationCap,
   Users,
-  Home
+  Home,
+  FileText
 } from 'lucide-react';
 import portfolioData from './data/portfolio.json';
 
@@ -532,13 +533,26 @@ export default function App() {
               </h3>
               <div className="space-y-6">
                 {portfolioData.publications.map((pub, idx) => (
-                  <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                  <div key={idx} className="group relative pl-5 md:pl-6 border-l border-white/10">
                     <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
                       <h4 className="font-bold text-white text-sm leading-snug">{pub.content}</h4>
                       <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{pub.date}</span>
                     </div>
-                    <p className="text-[10px] md:text-xs text-electric-blue">{pub.title}</p>
+                    <div className="flex items-center gap-2 mb-2">
+                      <p className="text-[10px] md:text-xs text-electric-blue">{pub.title}</p>
+                      {(pub as any).news_url && (
+                        <a 
+                          href={(pub as any).news_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-space-slate/60 hover:text-white transition-colors"
+                          title="상세 문서 보기"
+                        >
+                          <FileText className="w-3 h-3 md:w-3.5 md:h-3.5" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -608,13 +622,23 @@ export default function App() {
                 </h4>
                 <div className="space-y-6">
                   {portfolioData.presenter.map((pres, idx) => (
-                    <div key={idx} className="relative pl-5 md:pl-6 border-l border-white/10">
+                    <div key={idx} className="group relative pl-5 md:pl-6 border-l border-white/10">
                       <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-electric-blue" />
                       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
                         <h4 className="font-bold text-white text-sm leading-snug">{pres.topic}</h4>
                         <span className="text-space-slate font-mono text-[10px] whitespace-nowrap mt-1 sm:mt-0 sm:ml-4">{pres.date}</span>
                       </div>
-                      <p className="text-[10px] md:text-xs text-electric-blue">{pres.title}</p>
+                      <p className="text-[10px] md:text-xs text-electric-blue mb-2">{pres.title}</p>
+                      {(pres as any).news_url && (
+                        <a 
+                          href={(pres as any).news_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-[10px] font-bold text-space-slate/40 group-hover:text-electric-blue transition-colors flex items-center gap-1"
+                        >
+                          관련기사 <ExternalLink className="w-2.5 h-2.5" />
+                        </a>
+                      )}
                     </div>
                   ))}
                 </div>

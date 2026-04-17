@@ -206,7 +206,8 @@
       "items": [
         "(엔스퀘어) 유무인 복합체계 가상훈련 SW 개발",
         "(PNU드론) 항공SW개발을 위한 에뮬레이터 개발"
-      ]
+      ],
+      "news_url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156738611#pressRelease"
     },
     {
       "title": "2025 K-Aerospace 오픈이노베이션 (KAI, 우주항공청, 연구개발특구재단 공동 기획)",
@@ -256,7 +257,8 @@
     {
       "title": "공군 항공우주력 연구원, 항공우주력연구 11집",
       "date": "2023.12",
-      "content": "대한민국 차세대 공중 전투체계 개발방안 연구"
+      "content": "대한민국 차세대 공중 전투체계 개발방안 연구",
+      "news_url": "https://www.arokaf.co.kr/sub07/sub07_3_view.html?no=77&page=1"
     },
     {
       "title": "2023 항공우주학회(KSAS) 추계학술대회",
@@ -358,7 +360,8 @@
     {
       "title": "2025 G-Aero 대중소 오픈이노베이션 및 릴레이투자로드쇼 (경상대학교)",
       "date": "2025.10",
-      "topic": "KAI 오픈이노베이션 추진 전략 및 PoC 협업 사례 발표"
+      "topic": "KAI 오픈이노베이션 추진 전략 및 PoC 협업 사례 발표",
+      "news_url": "https://www.gnen.net/news/articleView.html?idxno=140057"
     }
   ]
 }
